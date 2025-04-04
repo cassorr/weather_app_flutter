@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'menu_view.dart'; // Import the menu view
+import 'views/menu_view.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -15,9 +13,9 @@ class MyApp extends StatelessWidget {
       title: 'Weather App',
       theme: ThemeData(
         brightness: Brightness.dark,
-        scaffoldBackgroundColor: const Color(0xFF0B0C2A), // Deep navy/purple background
-        primaryColor: const Color(0xFF6C63FF), // Main accent color (purple)
-        cardColor: const Color(0xFF2E2B5F), // Card color
+        scaffoldBackgroundColor: const Color(0xFF0B0C2A),
+        primaryColor: const Color(0xFF6C63FF),
+        cardColor: const Color(0xFF2E2B5F),
         appBarTheme: const AppBarTheme(
           backgroundColor: Color(0xFF0B0C2A),
           elevation: 0,
@@ -34,9 +32,9 @@ class MyApp extends StatelessWidget {
           titleMedium: TextStyle(color: Colors.white70, fontSize: 18),
         ),
         iconTheme: const IconThemeData(color: Colors.white),
-        useMaterial3: true, // Optional: if you want Material 3 look
+        useMaterial3: true,
       ),
-      home: const MenuView(), // Set MenuView as the main view
+      home: const MenuView(),
     );
   }
 }
